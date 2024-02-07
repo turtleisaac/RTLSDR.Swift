@@ -13,7 +13,7 @@ class RTLTunerR820T: RTLTuner {
     private static let i2cAddress:      UInt8   = 0x34
     private static let checkAddress:    UInt8   = 0x00
     private static let checkValue:      UInt8   = 0x69
-    private static let ifFrequency:     UInt32  = 3570000
+    private static let ifFrequency:     UInt32  = 1090000000
     private static let maxI2CLength:    UInt8   = 8
     
     private var capSelect:       xtalCapValue   = .highCap0P
@@ -160,5 +160,40 @@ class RTLTunerR820T: RTLTuner {
         
         
     }
+    
+//    override func setFrequency() -> Int {
+//        
+////        fatalError("Method \(#function) must be overridden!")
+//        return 0
+//        
+//    }
+//    
+//    func setBandwidth() -> Int {
+//        
+////        fatalError("Method \(#function) must be overridden!")
+//        return 0
+//        
+//    }
+//    
+//    func setGain() -> Int {
+//        
+////        fatalError("Method \(#function) must be overridden!")
+//        return 0
+//        
+//    }
+//    
+//    func setIFGain() -> Int {
+//        
+////        fatalError("Method \(#function) must be overridden!")
+//        return 0
+//        
+//    }
+//    
+//    func setGainMode() -> Int {
+//        
+////        fatalError("Method \(#function) must be overridden!")
+//        return 0
+//        
+//    }
 
 }
